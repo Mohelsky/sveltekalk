@@ -63,18 +63,17 @@
   
   <div class="container">
     <h1>Svelte Calculator</h1>
-    
-    <div class="row">
+        <div class="row">
+            <input type="number" bind:value={result} readonly />
+        </div>
+    <div class="row">    
       <input type="number" bind:value={num1} />
       <button on:click={() => operator = "+"}>+</button>
       <button on:click={() => operator = "-"}>-</button>
       <button on:click={() => operator = "*"}>*</button>
       <button on:click={() => operator = "/"}>/</button>
+      <button on:click={() => operator = "x²"}>x²</button>
       <input type="number" bind:value={num2} />
       <button on:click={calculate}>=</button>
-    </div>
-    
-    <div class="row">
-      <input type="number" bind:value={result} readonly />
     </div>
   </div>
