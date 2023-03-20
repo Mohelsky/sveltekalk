@@ -20,6 +20,9 @@
         case "/":
           result = num1 / num2;
           break;
+        case "x²":
+          result = num1 * num1;
+          break;
         default:
           result = 0;
       }
